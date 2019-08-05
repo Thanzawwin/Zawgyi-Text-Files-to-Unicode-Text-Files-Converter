@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/bootstrap-4.1.min.css">
+	<link rel="stylesheet" href="style/style.css">
+	<title>Converter</title>
+</head>
+<body>
+	<header>
+	<h4>Zawgyi To Unicoded Converter</h4>		
+	</header>
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-sm-8 mx-auto">
+				<div class="card card-body">
+					<form id="form">
+						<div class="form-group">
+							<label>Zawgyi Text Files</label>
+							<br/>
+							<input id="files" type="file" class="form-group" multiple>
+						</div>
+						<input type="submit" value="Change" class="btn btn-dark">
+					</form>
+				</div>
+				<!-- Show result -->
+				<ol id="list-result"></ol>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-3.3.min.js"></script>
+	<script src="js/axios.js"></script>
+	<script src="js/bootstrap-4.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="converter/Unicode.js"></script>
+	<script src="converter/Zawgyi.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
